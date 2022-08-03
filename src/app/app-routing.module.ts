@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -23,6 +24,11 @@ const routes: Routes = [
     path: 'works',
     loadChildren: () => import('./pages/works/works.module').then( m => m.WorksPageModule)
   },
+  {
+    path: 'table-client',
+    loadChildren: () => import('./pages/table-client/table-client.module').then( m => m.TableClientPageModule)
+  },
+
 ];
 
 @NgModule({
