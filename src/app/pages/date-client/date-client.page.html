@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Datos Cliente</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label floating>Nombre :</ion-label>
+          <ion-input type="text"
+                      required
+                      [(ngModel)]="clientData.nombre"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label floating>Apellidos :</ion-label>
+          <ion-input type="text"
+                      required
+                      [(ngModel)]="clientData.apellidos"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label floating>Cedula :</ion-label>
+          <ion-input type="text"
+                      required
+                      [(ngModel)]="clientData.cedula"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label floating>Celular :</ion-label>
+          <ion-input type="text"
+                      required
+                      [(ngModel)]="clientData.celular"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row > 
+      <ion-col> 
+        <ion-button ion-button color="success" (click)="guardar()" >Guardar</ion-button> 
+             
+          <ion-button ion-button  color="danger">Cancelar</ion-button>
+                 
+      </ion-col>
+    </ion-row>
+    
+   
+
+   <ion-img src="https://img2.freepng.es/20181126/jkq/kisspng-know-your-customer-computer-icons-drive-innovation-5bfbc37f0e7420.3222611815432262390592.jpg"></ion-img>
+
+</ion-content>

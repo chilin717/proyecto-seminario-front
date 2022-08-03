@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Datos Moto</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #formulario>
+   <ion-row>
+     <ion-col>
+       <ion-item>
+         <ion-label floating>Id :</ion-label>
+         <ion-input type="number"
+                     required
+                     name="id"
+                     ngModel></ion-input>
+       </ion-item>
+     </ion-col>
+   </ion-row>
+   <ion-row>
+     <ion-col>
+       <ion-item>
+         <ion-label floating>Marca Motocicleta :</ion-label>
+         <ion-input type="text"
+                     required
+                     name="marca moto"
+                     ngModel></ion-input>
+       </ion-item>
+     </ion-col>
+   </ion-row>
+   <ion-row>
+     <ion-col>
+       <ion-item>
+         <ion-label floating>Tipo Motocicleta :</ion-label>
+         <ion-input type="text"
+                     required
+                     name="tipo moto"
+                     ngModel></ion-input>
+       </ion-item>
+     </ion-col>
+   </ion-row>
+   <ion-row>
+     <ion-col>
+       <ion-item>
+         <ion-label floating>Color :</ion-label>
+         <ion-input type="text"
+                     required
+                     name="color"
+                     ngModel></ion-input>
+       </ion-item>
+     </ion-col>
+   </ion-row>
+   <ion-row>
+     <ion-col>
+       <ion-item>
+         <ion-label floating>Placa :</ion-label>
+         <ion-input type="text"
+                     required
+                     name="placa"
+                     ngModel></ion-input>
+       </ion-item>
+     </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-label floating>Cilindraje :</ion-label>
+        <ion-input type=""
+                    required
+                    name="cilindraje"
+                    ngModel></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+   <ion-row>
+     <ion-col> 
+       <ion-button ion-button color="success">Guardar</ion-button> 
+            
+         <ion-button ion-button  color="danger">Cancelar</ion-button>
+                
+     </ion-col>
+   </ion-row>
+   
+  </form>
+ <ion-img src="https://st2.depositphotos.com/4191945/8605/v/950/depositphotos_86054512-stock-illustration-vector-vintage-motorcycle-logo-template.jpg"></ion-img>
+
+</ion-content>
